@@ -1,34 +1,21 @@
-import 'phaser';
+import Phaser from 'phaser';
 
-var config = {
-    type: Phaser.AUTO,
-    parent: 'phaser-example',
-    width: 800,
-    height: 600,
-    scene: {
-        preload: preload,
-        create: create
-    }
+/*
+  The scenes
+*/
+import Boot from './scenes/boot';
+import LoadingScreen from './scenes/loadingScreen';
+import Lobby from './scenes/lobby';
+
+/*
+  When the page is ready initialize the game with the config
+  The boot scene will fire first
+*/
+const config = {
+  backgroundColor: '0x292A36',
+  scene: [ Boot, LoadingScreen, Lobby ]
 };
 
-var game = new Phaser.Game(config);
-
-function preload ()
-{
-    this.load.image('logo', 'assets/logo.png');
-}
-
-function create ()
-{
-    var logo = this.add.image(400, 150, 'logo');
-
-    this.tweens.add({
-        targets: logo,
-        y: 450,
-        duration: 2000,
-        ease: 'Power2',
-        yoyo: true,
-        loop: -1
-    });
-
-}
+document.addEventListener('DOMContentLoaded', () => {
+  window.game = new Phaser.Game(config);
+});
