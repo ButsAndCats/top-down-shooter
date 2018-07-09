@@ -1,5 +1,5 @@
 {
-  "image": {
-    "image-key": "assets/image/logo.png"
+  "atlasXML": {
+    "characters": ["assets/image/spritesheet_characters.png", "assets/xml/spritesheet_characters.xml"]
   }
 }
