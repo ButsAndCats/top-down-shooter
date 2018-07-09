@@ -73,6 +73,7 @@ export default class LoadingScreen extends Phaser.Scene {
         let value = json[group][key];
 
         if (group === 'atlas' ||
+          group === 'atlasXML' ||
           group === 'unityAtlas' ||
           group === 'bitmapFont' ||
           group === 'spritesheet' ||
