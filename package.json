@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Phaser top down shooter",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "npm run build && npm start"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,6 @@
   },
   "homepage": "https://github.com/photonstorm/phaser3-project-template#readme",
   "devDependencies": {
-    "webpack-dev-server": "^2.11.0",
     "webpack": "^3.4.1",
     "raw-loader": "^0.5.1"
   },
