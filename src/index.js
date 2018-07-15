@@ -13,7 +13,16 @@ import Lobby from './scenes/lobby';
 */
 const config = {
   backgroundColor: '0x292A36',
-  scene: [ Boot, LoadingScreen, Lobby ]
+  scene: [ Boot, LoadingScreen, Lobby ],
+  width: 800,
+  height: 600,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 0 },
+      debug: false
+    }
+  },
 };
 
 document.addEventListener('DOMContentLoaded', () => {

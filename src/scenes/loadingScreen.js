@@ -20,7 +20,6 @@ export default class LoadingScreen extends Phaser.Scene {
   }
 
   createProgressbar(x, y) {
-    console.log('creating progress bar')
     // size & position
     let width = 400;
     let height = 20;
@@ -73,11 +72,11 @@ export default class LoadingScreen extends Phaser.Scene {
         let value = json[group][key];
 
         if (group === 'atlas' ||
-          group === 'atlasXML' ||
-          group === 'unityAtlas' ||
-          group === 'bitmapFont' ||
-          group === 'spritesheet' ||
-          group === 'multiatlas') {
+            group === 'atlasXML' ||
+            group === 'unityAtlas' ||
+            group === 'bitmapFont' ||
+            group === 'spritesheet' ||
+            group === 'multiatlas') {
 
           // atlas:ƒ       (key, textureURL,  atlasURL,  textureXhrSettings, atlasXhrSettings)
           // unityAtlas:ƒ  (key, textureURL,  atlasURL,  textureXhrSettings, atlasXhrSettings)

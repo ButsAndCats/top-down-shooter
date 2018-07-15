@@ -1,5 +1,12 @@
 {
   "atlasXML": {
     "characters": ["assets/image/spritesheet_characters.png", "assets/xml/spritesheet_characters.xml"]
+  },
+  "spritesheet": {
+    "tiles": ["assets/image/tilesheet_complete.png", { "frameWidth": 64, "frameHeight": 64 }]
+  },
+  "image": {
+    "target": "assets/image/target.png",
+    "bullet": "assets/image/bullet.png"
   }
 }
